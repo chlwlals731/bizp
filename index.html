@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 - 최지민</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #ffffff;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .section {
+            margin-bottom: 32px;
+        }
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e293b;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 18px;
+            background-color: #2563eb;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .info-card {
+            background-color: #f1f5f9;
+            padding: 16px 20px;
+            border-radius: 8px;
+        }
+        .info-card label {
+            font-size: 0.85rem;
+            color: #64748b;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .info-card span {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #0f172a;
+        }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            background-color: #eff6ff;
+            color: #2563eb;
+            border: 1px solid #bfdbfe;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f5f9;
+            color: #64748b;
+            font-size: 0.85rem;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>최지민</h1>
+            <p>경영정보학과 | Management Information Systems</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">기본 정보</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <label>이름</label>
+                        <span>최지민</span>
+                    </div>
+                    <div class="info-card">
+                        <label>전공</label>
+                        <span>경영정보학과</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">소개</h2>
+                <p>
+                    안녕하세요! 경영학과 IT 기술의 융합을 탐구하는 경영정보학과 <strong>최지민</strong>입니다.<br>
+                    비즈니스 인사이트와 데이터·IT 역량을 결합하여 효율적인 의사결정과 혁신적인 서비스를 만들어가는 데 관심이 많습니다.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">관심 분야</h2>
+                <div class="tag-container">
+                    <span class="tag">#데이터분석</span>
+                    <span class="tag">#비즈니스기획</span>
+                    <span class="tag">#IT컨설팅</span>
+                    <span class="tag">#웹개발</span>
+                    <span class="tag">#정보시스템</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 최지민. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
